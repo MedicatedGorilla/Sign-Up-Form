@@ -1,0 +1,164 @@
+@font-face{
+    src:url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf') format('opentype');
+    font-family: 'Norse-Bold';
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;   
+    margin: 0;
+    padding: 0; 
+}
+.sidebar{
+    flex: 1;
+    background: url("./images/fern.avif") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9rem;
+    font-weight: bold;
+    font-family: 'Norse-Bold';
+    color: aliceblue;
+    background-color: black;
+    background-color: rgba(0,0,0,.5);
+    flex: 1;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 30%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 32px;
+}
+
+#logo {
+    max-height: 95%;
+    max-width: 95%;
+}
+
+.credit{
+    flex: 2;
+    display: flex;
+    color: aliceblue;
+    font-size: .5rem;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 1vh;
+    font-weight: bold;
+}
+
+
+.main-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color:#f9f9f9;
+}
+
+.CTA{
+    flex: 1;
+    padding-left: 5vh;
+    padding-right: 15vh;
+    padding-bottom: 5vh;;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 5vh;
+    gap: 32px;
+    
+    font-family:Helvetica, sans-serif;
+    font-weight: 530;
+    font-size: 1.5rem;
+
+}
+
+
+
+.footer{
+    flex: 1;
+    padding-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5vh;
+    padding-left: 10vh;
+    gap: 2vh;
+}
+
+.footer button{
+    width: 25vh;
+    height: 5vh;
+    background-color:   #4F7942;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 1px 7px rgba(0,0,0,.25);
+}
+
+.login{
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+a:link{
+    font-weight: bold;
+}
+
+.credit a{
+    color: aliceblue;
+}
+.credit a:visited{
+    color: aliceblue;
+}
+
+.login a {
+    color: #4F7942;
+    text-decoration: none;
+}
+.login a:visited{
+    color: #4F7942;
+}
+
+.form{
+    flex: 1;
+    padding-left: 3vh;
+    box-shadow: 5px 1px 7px rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding-left:10vh;
+    
+}
+
+.mainform{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: flex-start;
+    
+}
+
+.mainform label, .mainform input{
+    margin-bottom: 5px;
+}
+
+input{
+    height: 1em;
+}
