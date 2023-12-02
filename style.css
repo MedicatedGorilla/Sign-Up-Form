@@ -148,17 +148,51 @@ a:link{
 }
 
 .mainform{
+    max-width: 50vh;
+    height: 100%;
+    margin-bottom: 2vh;
+    font-family:Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
-    justify-content: flex-start;
+    align-items: top;
+    gap: 10px;
+    justify-content: space-between;
     
 }
 
 .mainform label, .mainform input{
-    margin-bottom: 5px;
+    width: 100%;
 }
 
-input{
+.form-field input{
     height: 1em;
+    width: 100%; 
+    margin-bottom: 5px;
+    border-radius: 5px;
+    min-height: 30px;
+    min-width: 250px;
 }
+.mainform label{
+    white-space: nowrap; 
+    text-align: left; 
+    padding-right: 10px;
+    grid-column: span 1;
+    width: 100%; 
+    margin-bottom: 5px;
+    
+}
+.form-header{
+    font-size: 1.5rem;
+    font-family:Helvetica, sans-serif;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-weight: bold;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    border-color: #E5E7EB;
+    box-shadow: none;
+}
+
