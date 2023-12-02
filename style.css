@@ -196,3 +196,13 @@ a:link{
     box-shadow: none;
 }
 
+input:focus{
+    border-color: #5e81ac;
+}
+
+input:invalid:not(:placeholder-shown){
+    border-color: red;
+}
+
+
+
